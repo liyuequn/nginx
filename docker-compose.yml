@@ -2,7 +2,7 @@ web:
   image: nginx
   volumes:
    - $PWD/vhosts:/etc/nginx/conf.d
-   - $PWD/cert/vhosts:/etc/nginx/cert
+   - $PWD/cert:/etc/nginx/cert
   ports:
    - "80:80"
    - "443:443"
